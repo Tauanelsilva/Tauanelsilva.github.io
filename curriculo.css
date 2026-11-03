@@ -1,0 +1,77 @@
+:root {
+  --ink: #1c1915;
+  --muted: #4d463d;
+  --line: #ddd4c6;
+  --paper: #fffcf7;
+  --copper: #8a4e24;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #ece7df;
+  color: var(--ink);
+  font-family: "Segoe UI", Calibri, sans-serif;
+  line-height: 1.4;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: min(800px, calc(100% - 2rem));
+  margin: 1rem auto;
+}
+
+button, .toolbar a {
+  font: inherit;
+  color: var(--copper);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.sheet {
+  width: min(800px, calc(100% - 2rem));
+  margin: 0 auto 2rem;
+  padding: 2rem 2.1rem 2.2rem;
+  background: var(--paper);
+  box-shadow: 0 16px 40px rgba(40, 30, 16, 0.08);
+}
+
+h1 { margin: 0; font-size: 2rem; letter-spacing: -0.03em; }
+
+.role { margin: 0.25rem 0 0; }
+
+.meta, .sheet p { margin: 0.35rem 0 0; color: var(--muted); }
+
+.meta a, .sheet a { color: var(--copper); }
+
+h2 {
+  margin: 1.05rem 0 0.35rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.item-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.55rem !important;
+  color: var(--ink) !important;
+  font-weight: 650;
+}
+
+.item-title span { color: var(--muted); font-weight: 450; }
+
+@page { size: A4; margin: 12mm; }
+
+@media print {
+  body { background: white; }
+  .toolbar { display: none; }
+  .sheet { width: auto; margin: 0; padding: 0; box-shadow: none; }
+  a { color: inherit; text-decoration: none; }
+}

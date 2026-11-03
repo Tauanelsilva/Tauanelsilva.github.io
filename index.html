@@ -1,246 +1,390 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tauane Luísa Silva · Engenharia de Computação</title>
     <meta
       name="description"
-      content="Portfólio de Tauane Luísa Silva, estudante de Engenharia da Computação e desenvolvedora full stack."
+      content="Portfólio de Tauane Luísa Silva, estudante de Engenharia de Computação no CEFET-MG. APIs, automação e aplicações web."
     />
-    <meta name="theme-color" content="#080b12" />
-    <title>Tauane Silva | Engenharia & Software</title>
+    <link rel="canonical" href="https://tauanelsilva.github.io/" />
+    <meta property="og:title" content="Tauane Luísa Silva · Portfólio" />
+    <meta
+      property="og:description"
+      content="Estudante de Engenharia de Computação. APIs, automação e produtos web com Python, TypeScript, C# e C++."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tauanelsilva.github.io/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tauane Luísa Silva",
+        "url": "https://tauanelsilva.github.io/",
+        "email": "mailto:tauanealeatorias@gmail.com",
+        "jobTitle": "Estudante de Engenharia de Computação",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "CEFET-MG",
+          "address": "Divinópolis, MG"
+        },
+        "sameAs": [
+          "https://github.com/Tauanelsilva",
+          "https://www.linkedin.com/in/tauane-silva-62ba85339/"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div class="noise" aria-hidden="true"></div>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
     <header class="site-header">
-      <a class="logo" href="#inicio" aria-label="Voltar ao início">
-        <span>TS</span><i></i>
-      </a>
-      <nav aria-label="Navegação principal">
+      <a class="mark" href="#topo">TS</a>
+      <details class="site-nav">
+        <summary>Menu</summary>
+        <nav id="menu" class="nav">
         <a href="#sobre">Sobre</a>
+        <a href="#competencias">Competências</a>
+        <a href="#formacao">Formação</a>
         <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Stack</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-cv" href="curriculo.html">Currículo</a>
       </nav>
-      <a class="header-cta" href="https://github.com/Tauanelsilva" target="_blank" rel="noreferrer">
-        GitHub
-        <span aria-hidden="true">↗</span>
-      </a>
+      </details>
     </header>
 
-    <main>
-      <section class="hero" id="inicio">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Disponível para novos desafios</p>
-          <h1>
-            Eu transformo ideias em
-            <em>software que funciona.</em>
-          </h1>
-          <p class="hero-text">
-            Sou <strong>Tauane Luísa Silva</strong>, estudante de Engenharia da
-            Computação e desenvolvedora focada em criar produtos digitais
-            completos — da arquitetura ao último pixel.
+    <main id="conteudo">
+      <section class="hero" id="topo">
+        <p class="pill">Disponível para estágio e início de carreira</p>
+        <h1>Tauane Luísa Silva</h1>
+        <p class="lede">
+          Estudante de Engenharia de Computação no CEFET-MG, campus Divinópolis.
+          Construo APIs, automações e aplicações web em que a regra de negócio,
+          o teste e a documentação fazem parte do projeto — não de um anexo.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#projetos">Ver projetos</a>
+          <a class="button button-ghost" href="curriculo.html">Abrir currículo</a>
+        </div>
+        <dl class="facts">
+          <div>
+            <dt>Formação</dt>
+            <dd>Engenharia de Computação, CEFET-MG</dd>
+          </div>
+          <div>
+            <dt>Foco</dt>
+            <dd>Back-end, automação e produto web</dd>
+          </div>
+          <div>
+            <dt>Base</dt>
+            <dd>Python, TypeScript, C# e C++</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="sobre" class="section">
+        <p class="index">01</p>
+        <div>
+          <h2>Sobre</h2>
+          <p>
+            Gosto de partir do problema: o que precisa ser verdade para o
+            sistema ser útil, o que pode falhar e como outra pessoa entende o
+            código depois. A graduação me dá a base de algoritmos, estruturas
+            de dados e arquitetura; os projetos são onde eu pratico isso de
+            ponta a ponta.
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projetos">Explorar projetos <span>↓</span></a>
-            <a class="button ghost" href="https://github.com/Tauanelsilva" target="_blank" rel="noreferrer">
-              Ver perfil no GitHub
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="profile-card">
-            <div class="profile-top">
-              <span class="status-dot"></span>
-              <span>github.com/Tauanelsilva</span>
-            </div>
-            <img
-              src="https://avatars.githubusercontent.com/u/166246403?v=4"
-              alt="Foto de perfil de Tauane Luísa Silva"
-            />
-            <div class="profile-info">
-              <p>Engenharia + código</p>
-              <strong>Construindo o próximo.</strong>
-            </div>
-          </div>
-          <div class="floating-tag tag-react">React</div>
-          <div class="floating-tag tag-python">Python</div>
-          <div class="floating-tag tag-dotnet">.NET</div>
-        </div>
-
-        <div class="hero-stats reveal">
-          <div><strong>12</strong><span>repositórios públicos</span></div>
-          <div><strong>5+</strong><span>tecnologias principais</span></div>
-          <div><strong>Full stack</strong><span>do backend à interface</span></div>
+          <p>
+            No ChegoLá, o cuidado foi não inventar um alerta de alagamento que
+            a fonte não sustenta. Na plataforma de oportunidades, a triagem é
+            um motor de critérios com pontuação, separado da interface. No
+            Portal da Transparência, a automação vive atrás de uma API, com
+            evidência da consulta. Quero um time em que eu possa entregar com
+            esse mesmo critério e aprender com revisão de gente mais experiente.
+          </p>
         </div>
       </section>
 
-      <section class="about section" id="sobre">
-        <div class="section-label reveal"><span>01</span> Sobre mim</div>
-        <div class="about-grid">
-          <h2 class="reveal">Curiosidade técnica.<br />Visão de produto.</h2>
-          <div class="about-copy reveal">
-            <p>
-              Minha formação em Engenharia da Computação me permite enxergar além
-              do código. Gosto de entender o problema, desenhar uma solução clara
-              e desenvolver sistemas confiáveis, organizados e agradáveis de usar.
-            </p>
-            <p>
-              Meus projetos passam por desenvolvimento full stack, automação,
-              inteligência artificial, APIs e estruturas de dados — sempre com
-              aprendizado contínuo e atenção aos detalhes.
-            </p>
+      <section id="competencias" class="section">
+        <p class="index">02</p>
+        <div>
+          <h2>Competências</h2>
+          <div class="groups">
+            <article>
+              <h3>Linguagens</h3>
+              <ul>
+                <li>Python</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>C++</li>
+                <li>HTML e CSS</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Back-end</h3>
+              <ul>
+                <li>FastAPI</li>
+                <li>.NET</li>
+                <li>Node.js</li>
+                <li>APIs REST</li>
+                <li>tRPC</li>
+                <li>JWT</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Interface e dados</h3>
+              <ul>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>SQLite</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Ferramentas</h3>
+              <ul>
+                <li>Git e GitHub</li>
+                <li>Docker</li>
+                <li>Playwright</li>
+                <li>Pytest</li>
+                <li>Testes de API</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="projects section" id="projetos">
-        <div class="section-heading reveal">
-          <div class="section-label"><span>02</span> Projetos selecionados</div>
-          <h2>Trabalhos que unem<br />lógica e propósito.</h2>
+      <section id="formacao" class="section">
+        <p class="index">03</p>
+        <div>
+          <h2>Formação</h2>
+          <ol class="timeline">
+            <li>
+              <h3>Engenharia de Computação</h3>
+              <p class="where">CEFET-MG · campus Divinópolis · em andamento</p>
+              <p>
+                Algoritmos, estruturas de dados, programação orientada a
+                objetos, arquitetura de computadores e desenvolvimento de software.
+              </p>
+            </li>
+            <li>
+              <h3>Algoritmos e Estruturas de Dados I</h3>
+              <p class="where">Prof. Michel Pires da Silva</p>
+              <p>
+                Simulador de propagação de fogo em floresta, com decisão de
+                fuga de um animal, em C++. Entrada e saída em arquivo, matriz
+                dinâmica e prioridades de movimento.
+              </p>
+            </li>
+            <li>
+              <h3>Trabalhos em grupo</h3>
+              <p class="where">AEDI e Arquitetura de Computadores II</p>
+              <p>
+                Sistema de recomendação em C++, com Kairo Henrique, Igor Moreira,
+                Heitor Henrique e Maria Eduarda. Laboratório MIC-1 com Igor e Lorena.
+              </p>
+            </li>
+          </ol>
         </div>
+      </section>
 
-        <div class="project-grid">
-          <article class="project featured reveal">
-            <div class="project-number">01</div>
-            <div class="project-art art-hzn" aria-hidden="true">
-              <div class="mini-window">
-                <div class="window-bar"><i></i><i></i><i></i></div>
-                <div class="dashboard">
-                  <div class="dash-side"></div>
-                  <div class="dash-content">
-                    <span></span><span></span><span></span>
-                    <div class="dash-chart"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-meta">
-                <span>Full stack + IA</span><span>2026</span>
-              </div>
-              <h3>HZN Opportunity Platform</h3>
+      <section id="projetos" class="section">
+        <p class="index">04</p>
+        <div>
+          <h2>Projetos</h2>
+          <p class="section-lead">
+            Seis trabalhos para abrir primeiro. Abaixo, estudos e trabalhos de
+            disciplina que mostram a base.
+          </p>
+          <div class="projects">
+            <article class="project">
+              <p class="kicker">Produto web · Itaúna/MG</p>
+              <h3>ChegoLá</h3>
               <p>
-                Plataforma para gestão e avaliação de oportunidades de negócio,
-                com análise por IA, upload de documentos e painel administrativo.
+                Mapa colaborativo de pontos de alagamento. A pessoa consulta
+                ocorrências, registra um relato e vê um aviso quando a rota
+                passa perto de um ponto. A fonte oficial fica identificada, e
+                o relato novo não é tratado como fato verificado.
               </p>
-              <div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>MySQL</span></div>
-              <a href="https://github.com/Tauanelsilva/hzn-opportunity-platform" target="_blank" rel="noreferrer">
-                Ver repositório <span>↗</span>
-              </a>
-            </div>
-          </article>
+              <ul class="tags">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>MapLibre</li>
+              </ul>
+              <p class="links">
+                <a href="https://chego-la.vercel.app">Abrir o site</a>
+                <a href="https://github.com/Tauanelsilva/ChegoLa">Código</a>
+              </p>
+            </article>
 
-          <article class="project reveal">
-            <div class="project-number">02</div>
-            <div class="project-art art-finance" aria-hidden="true">
-              <div class="finance-card">
-                <p>Visão geral</p><strong>R$ 8.420</strong>
-                <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-meta"><span>Aplicação web</span><span>2026</span></div>
-              <h3>Controle de Gastos</h3>
+            <article class="project">
+              <p class="kicker">Full stack · triagem</p>
+              <h3>Plataforma de oportunidades</h3>
               <p>
-                Sistema residencial para organizar pessoas, transações e totais,
-                construído com arquitetura em camadas e regras de negócio.
+                Submissão de oportunidades, anexo, painel e decisão de aprovar
+                ou recusar. A análise é um motor de critérios no servidor:
+                pontua mercado, modelo e risco e devolve pontos fortes,
+                alertas e recomendação. O prompt não fica no navegador.
               </p>
-              <div class="tags"><span>.NET 8</span><span>C#</span><span>React</span><span>TypeScript</span></div>
-              <a href="https://github.com/Tauanelsilva/Desafio-tecnico-controle-de-gastos" target="_blank" rel="noreferrer">
-                Ver repositório <span>↗</span>
-              </a>
-            </div>
-          </article>
+              <ul class="tags">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>tRPC</li>
+                <li>MySQL</li>
+              </ul>
+              <p class="links">
+                <a href="https://github.com/Tauanelsilva/hzn-opportunity-platform">Código</a>
+              </p>
+            </article>
 
-          <article class="project reveal">
-            <div class="project-number">03</div>
-            <div class="project-art art-rpa" aria-hidden="true">
-              <div class="terminal-card">
-                <div><i></i><i></i><i></i></div>
-                <p><span>$</span> python automate.py</p>
-                <p class="success">✓ Dados encontrados</p>
-                <p class="muted">API ready on :8000</p>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-meta"><span>Automação RPA</span><span>2026</span></div>
+            <article class="project">
+              <p class="kicker">Aplicação em camadas</p>
+              <h3>Controle de gastos</h3>
+              <p>
+                Organização de pessoas, transações e totais de uma residência.
+                O desenho separa regras de negócio, acesso a dados e interface,
+                com .NET no servidor e React na tela.
+              </p>
+              <ul class="tags">
+                <li>C#</li>
+                <li>.NET</li>
+                <li>React</li>
+                <li>TypeScript</li>
+              </ul>
+              <p class="links">
+                <a href="https://github.com/Tauanelsilva/Desafio-tecnico-controle-de-gastos">Código</a>
+              </p>
+            </article>
+
+            <article class="project">
+              <p class="kicker">Automação</p>
               <h3>Portal da Transparência</h3>
               <p>
-                API de automação para busca de dados públicos, combinando
-                navegação automatizada, extração de dados e endpoints modernos.
+                API que consulta beneficiários no Portal da Transparência,
+                devolve JSON e guarda uma captura da página como evidência.
+                Sobe com Docker e documenta os cenários no Swagger.
               </p>
-              <div class="tags"><span>Python</span><span>FastAPI</span><span>Playwright</span><span>Docker</span></div>
-              <a href="https://github.com/Tauanelsilva/desafio-01" target="_blank" rel="noreferrer">
-                Ver repositório <span>↗</span>
-              </a>
-            </div>
-          </article>
+              <ul class="tags">
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>Playwright</li>
+                <li>Docker</li>
+              </ul>
+              <p class="links">
+                <a href="https://github.com/Tauanelsilva/desafio-01">Código</a>
+              </p>
+            </article>
 
-          <article class="project reveal">
-            <div class="project-number">04</div>
-            <div class="project-art art-algorithms" aria-hidden="true">
-              <div class="nodes">
-                <i>8</i><i>3</i><i>10</i><i>1</i><i>6</i>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-meta"><span>Ciência da computação</span><span>2026</span></div>
-              <h3>Algoritmos & Estruturas</h3>
+            <article class="project">
+              <p class="kicker">Ferramenta</p>
+              <h3>Sonda</h3>
               <p>
-                Implementações de algoritmos clássicos e estruturas de dados,
-                acompanhadas por análises de complexidade.
+                Verificador de endpoints HTTP. Lê uma lista de URLs, mede
+                latência e status e grava um relatório JSON. A regra de “no ar”
+                e os testes rodam contra um servidor local, sem depender de um
+                site externo.
               </p>
-              <div class="tags"><span>C++</span><span>Python</span><span>Algoritmos</span></div>
-              <a href="https://github.com/Tauanelsilva/algorithms-and-data-structures" target="_blank" rel="noreferrer">
-                Ver repositório <span>↗</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
+              <ul class="tags">
+                <li>Python</li>
+                <li>CLI</li>
+                <li>Pytest</li>
+              </ul>
+              <p class="links">
+                <a href="https://github.com/Tauanelsilva/sonda">Código</a>
+              </p>
+            </article>
 
-      <section class="skills section" id="habilidades">
-        <div class="section-label reveal"><span>03</span> Tecnologias</div>
-        <div class="skills-wrap reveal">
-          <h2>Ferramentas que uso para<br />tirar projetos do papel.</h2>
-          <div class="skill-cloud">
-            <span>TypeScript</span><span>React</span><span>Python</span>
-            <span>C#</span><span>.NET 8</span><span>Node.js</span>
-            <span>FastAPI</span><span>MySQL</span><span>Docker</span>
-            <span>Playwright</span><span>C++</span><span>Git</span>
+            <article class="project">
+              <p class="kicker">API</p>
+              <h3>Tarefas</h3>
+              <p>
+                API REST de tarefas com cadastro, login JWT e CRUD separado por
+                usuário. SQLite, OpenAPI e testes do fluxo principal: token
+                ausente, tarefa de outra pessoa e filtro por status.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>SQLite</li>
+                <li>JWT</li>
+              </ul>
+              <p class="links">
+                <a href="https://github.com/Tauanelsilva/task-manager-api">Código</a>
+              </p>
+            </article>
+          </div>
+
+          <div class="more">
+            <article>
+              <h3>Simulador de fogo</h3>
+              <p>Propagação em matriz e fuga do animal, em C++. Disciplina de AEDS I.</p>
+              <a href="https://github.com/Tauanelsilva/trabalho-aquecimento">Repositório</a>
+            </article>
+            <article>
+              <h3>Preços de livros</h3>
+              <p>
+                Coleta a categoria Science do books.toscrape.com, grava histórico
+                no SQLite e abre um painel Streamlit.
+              </p>
+              <a href="https://github.com/Tauanelsilva/ecommerce-price-tracker">Repositório</a>
+            </article>
+            <article>
+              <h3>Algoritmos</h3>
+              <p>
+                Ordenação, busca, grafo, pilha, fila e tabela hash, com testes
+                em Python e uma versão em C++.
+              </p>
+              <a href="https://github.com/Tauanelsilva/algorithms-and-data-structures">Repositório</a>
+            </article>
+            <article>
+              <h3>Recomendação</h3>
+              <p>
+                Trabalho em grupo de AEDI, em C++. Repositório compartilhado com
+                a equipe.
+              </p>
+              <a href="https://github.com/KairoHenrique/Sistema-de-recomendacao">Repositório</a>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="contact section reveal">
-        <p class="eyebrow"><span></span> Vamos conversar</p>
-        <h2>Tem uma ideia?<br /><em>Vamos construir.</em></h2>
-        <p>
-          Estou aberta a oportunidades, colaborações e projetos que gerem
-          aprendizado e impacto.
-        </p>
-        <a class="button primary" href="https://github.com/Tauanelsilva" target="_blank" rel="noreferrer">
-          Entrar em contato pelo GitHub <span>↗</span>
-        </a>
+      <section id="contato" class="section contact">
+        <p class="index">05</p>
+        <div>
+          <h2>Contato</h2>
+          <p>
+            Estou aberta a estágio e início de carreira em desenvolvimento de
+            software. Se quiser ver o código antes da conversa, os links acima
+            são o caminho mais curto.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:tauanealeatorias@gmail.com">tauanealeatorias@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/tauane-silva-62ba85339/">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/Tauanelsilva">github.com/Tauanelsilva</a>
+            </li>
+            <li><a href="curriculo.html">Currículo para imprimir</a></li>
+          </ul>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <a class="logo" href="#inicio"><span>TS</span><i></i></a>
-      <p>Projetado e desenvolvido com intenção.</p>
-      <p>© <span id="year"></span> Tauane Silva</p>
+    <footer class="site-footer">
+      <p>Tauane Luísa Silva · Divinópolis, MG</p>
+      <p>Engenharia de Computação · CEFET-MG</p>
     </footer>
   </body>
 </html>

@@ -1,17 +1,8 @@
-# Portfólio — Tauane Silva
+# Portfólio
 
-Portfólio pessoal estático e responsivo, criado com base nos projetos públicos do perfil [@Tauanelsilva](https://github.com/Tauanelsilva).
+Site de Tauane Luísa Silva, estudante de Engenharia de Computação no CEFET-MG.
 
-## Executar
+- Página: https://tauanelsilva.github.io
+- Currículo para impressão: https://tauanelsilva.github.io/curriculo.html
 
-Abra `index.html` diretamente no navegador ou use a extensão Live Server do VS Code/Cursor.
-
-Não há dependências nem etapa de build.
-
-## Personalizar
-
-- Textos e links: `index.html`
-- Cores, tipografia e layout: `styles.css`
-- Animações: `script.js`
-
-Antes de publicar, adicione no bloco de contato o seu e-mail e, se tiver, LinkedIn.
+Para ver no computador, abra `index.html` ou rode `python -m http.server` nesta pasta.
